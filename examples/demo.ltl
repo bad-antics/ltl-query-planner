@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_query_planner
+
+import std::io
+use ltl_query_planner as lib
+
+fn main() {
+    io::println("ltl_query_planner demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
